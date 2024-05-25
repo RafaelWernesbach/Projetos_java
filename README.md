@@ -1,2 +1,1 @@
-## Repositorio referente as entregas de trabalhos
-## Da materia de programação orientada a objetos
+## Repositorio referente as entregas de trabalhos da materia de programação orientada a objetos
