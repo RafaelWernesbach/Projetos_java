@@ -1,4 +1,3 @@
-
 package personagens;
 
 import armas.Arma_IF;
@@ -10,6 +9,7 @@ import armas.Fogo;
 import armas.Revolver;
 import armas.Desarmado;
 import armas.Escopeta;
+import armas.Espada;
 
 public class JogoModelado {
     public static void main(String[] args) {
@@ -85,8 +85,9 @@ public class JogoModelado {
         System.out.println("3. Faca");
         System.out.println("4. Fogo");
         System.out.println("5. Revolver");
-        System.out.println("6. Desarmado"); 
-        System.out.println("7. Escopeta");
+        System.out.println("6. Desarmado");
+        System.out.println("7. Espada"); 
+
         
        int escolhaArma = scanner.nextInt();
 
@@ -112,6 +113,9 @@ public class JogoModelado {
                 arma = new Desarmado();
                 break;
             case 7:
+                arma = new Espada();
+                break;
+            case 8:
                 arma = new Escopeta();
                 break;
             default:
@@ -166,6 +170,11 @@ public class JogoModelado {
             } else {
                 System.out.println("O combate continua...");
                 vilao.usarArma(jogador);
+                System.out.println("Deseja escolher outra arma? Digite 1 para sim e 0 para não");
+                int chance = scanner.nextInt();
+                if(chance == 1){
+                     escolherArma(jogador, scanner);
+                }
             }
         }
     }
