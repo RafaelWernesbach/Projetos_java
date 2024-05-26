@@ -3,7 +3,7 @@ package personagens;
 
 public class Mago extends Personagem {
     public Mago(){
-        this.hp = 80;
+        this.hp = 85;
     }
     @Override
     public void desenhar() {
