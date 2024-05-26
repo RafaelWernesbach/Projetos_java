@@ -18,6 +18,6 @@ public class Magia implements Arma_IF {
     
     @Override
 public int causarDano(){
-    return 230;
+    return 200;
 }
 }
